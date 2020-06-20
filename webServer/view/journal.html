@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/static/css/layui.css" type="text/css">
+  <script src="/static/layui.all.js" type="text/javascript"></script>
+  <title>欢迎使用SDFS</title>
+</head>
+<body>
+  <div class="layui-layout layui-layout-admin">
+    <div class="layui-header">
+      <a class="logo" href="filelist.html" style="left: auto;">
+        <img src="/static/image/title.png" alt="简单分布式文件系统">
+      </a>
+    </div>
+    
+    <div class="layui-side layui-bg-black">
+      <div class="layui-side-scroll">
+        <ul class="layui-nav layui-nav-tree">
+          <li class="layui-nav-item layui-nav-itemed">
+            <a href="/filelist">文件控制</a>
+          </li>
+          <li class="layui-nav-item layui-nav-itemed">
+            <a href="/mq">消息队列集群管理</a>
+          </li>
+          <li class="layui-nav-item layui-nav-itemed">
+            <a href="/es">元数据集群管理</a>
+          </li>
+          <li class="layui-nav-item layui-nav-itemed">
+            <a href="javascript:;">日志查看</a>
+            <dl class="layui-nav-child">
+              <dd>
+                <a href="/journal?target=webserver1">
+                  Web Server 1
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=webserver2">
+                  Web Server 2
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=webserver3">
+                  Web Server 3
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=apiserver1">
+                  API Node 1
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=apiserver2">
+                  API Node 2
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=apiserver3">
+                  API Node 3
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=dataserver1">
+                  Data Node 1
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=dataserver2">
+                  Data Node 2
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=dataserver3">
+                  Data Node 3
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=dataserver4">
+                  Data Node 4
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=dataserver5">
+                  Data Node 5
+                </a>
+              </dd>
+              <dd>
+                <a href="/journal?target=dataserver6">
+                  Data Node 6
+                </a>
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="layui-body">
+      <div class="layui-main">
+        <pre class="layui-code">
+          {{ . }}
+        </pre>
+      </div>
+    </div>
+
+    <div class="layui-footer footer footer-demo">
+      <div class="layui-main">
+        <span>&copy; 2020 <a href="#">JaimeOwens</a></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
